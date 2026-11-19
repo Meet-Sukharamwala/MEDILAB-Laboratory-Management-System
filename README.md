@@ -38,5 +38,5 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/MEDILAB.git](https://github.com/YOUR_USERNAME/MEDILAB.git)
+   git clone [https://github.com/Meet-Sukharamwala/MEDILAB.git](https://github.com/Meet-Sukharamwala/MEDILAB.git)
    cd MEDILAB
