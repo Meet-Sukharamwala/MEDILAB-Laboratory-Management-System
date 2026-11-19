@@ -1,0 +1,6 @@
+{
+  "name": "MEDILAB",
+  "description": "Medical Laboratory Report Management System with SQLite CRUD, PDF generation, patient management, and diagnostic test records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
