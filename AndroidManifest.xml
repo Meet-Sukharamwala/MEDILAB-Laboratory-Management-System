@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Medilab">
+
+        <!-- Login Activity (Launcher Entry Point) -->
+        <activity
+            android:name="com.example.medilab.activities.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Dashboard Activity -->
+        <activity
+            android:name="com.example.medilab.activities.DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_dashboard" />
+
+        <!-- Patient Management Activities -->
+        <activity
+            android:name="com.example.medilab.activities.PatientListActivity"
+            android:exported="false"
+            android:label="@string/title_patient_list"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.example.medilab.activities.AddPatientActivity"
+            android:exported="false"
+            android:label="@string/title_add_patient"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.EditPatientActivity"
+            android:exported="false"
+            android:label="@string/title_edit_patient"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.PatientDetailsActivity"
+            android:exported="false"
+            android:label="@string/title_patient_details" />
+
+        <!-- Medical Test Management Activities -->
+        <activity
+            android:name="com.example.medilab.activities.MedicalTestListActivity"
+            android:exported="false"
+            android:label="@string/title_test_list"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.example.medilab.activities.AddMedicalTestActivity"
+            android:exported="false"
+            android:label="@string/title_add_test"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.EditMedicalTestActivity"
+            android:exported="false"
+            android:label="@string/title_edit_test"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.MedicalTestDetailsActivity"
+            android:exported="false"
+            android:label="@string/title_test_details" />
+
+        <!-- Diagnostic Lab Report Activities -->
+        <activity
+            android:name="com.example.medilab.activities.ReportListActivity"
+            android:exported="false"
+            android:label="@string/title_report_list"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.example.medilab.activities.GenerateReportActivity"
+            android:exported="false"
+            android:label="@string/title_generate_report"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.EditReportActivity"
+            android:exported="false"
+            android:label="@string/title_edit_report"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.ReportDetailsActivity"
+            android:exported="false"
+            android:label="@string/title_report_details" />
+
+        <!-- User / Patient Portal Activities -->
+        <activity
+            android:name="com.example.medilab.activities.RegisterActivity"
+            android:exported="false"
+            android:label="Patient Registration"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserDashboardActivity"
+            android:exported="false"
+            android:label="Patient Portal" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserTestListActivity"
+            android:exported="false"
+            android:label="Available Medical Tests"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserTestDetailsActivity"
+            android:exported="false"
+            android:label="Test Details" />
+
+        <activity
+            android:name="com.example.medilab.activities.BookTestActivity"
+            android:exported="false"
+            android:label="Book Sample Collection"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.PaymentActivity"
+            android:exported="false"
+            android:label="Payment Checkout"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.PaymentSuccessActivity"
+            android:exported="false"
+            android:label="Booking Confirmed" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserAppointmentListActivity"
+            android:exported="false"
+            android:label="My Appointments" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserReportListActivity"
+            android:exported="false"
+            android:label="My Lab Reports"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserReportDetailsActivity"
+            android:exported="false"
+            android:label="Laboratory Report Findings" />
+
+        <activity
+            android:name="com.example.medilab.activities.PaymentHistoryActivity"
+            android:exported="false"
+            android:label="Payment History" />
+
+        <activity
+            android:name="com.example.medilab.activities.UserProfileActivity"
+            android:exported="false"
+            android:label="Patient Profile"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.medilab.activities.NotificationActivity"
+            android:exported="false"
+            android:label="Notifications" />
+
+        <activity
+            android:name="com.example.medilab.activities.FeedbackActivity"
+            android:exported="false"
+            android:label="Service Feedback"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- FileProvider for Secure PDF Document Export & Sharing -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

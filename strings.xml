@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MEDILAB</string>
+    <string name="app_tagline">Medical Laboratory Report Management System</string>
+
+    <!-- Login -->
+    <string name="title_login">Staff Login</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login to Medilab</string>
+    <string name="login_demo_hint">Default Credentials: admin / admin123</string>
+    <string name="error_invalid_credentials">Invalid username or password.</string>
+    <string name="error_empty_username">Please enter username</string>
+    <string name="error_empty_password">Please enter password</string>
+
+    <!-- Dashboard -->
+    <string name="title_dashboard">MEDILAB Dashboard</string>
+    <string name="stat_patients">Total Patients</string>
+    <string name="stat_tests">Medical Tests</string>
+    <string name="stat_reports">Total Reports</string>
+    <string name="stat_today">Today\'s Reports</string>
+    <string name="menu_patients">Patients</string>
+    <string name="menu_tests">Medical Tests</string>
+    <string name="menu_reports">Lab Reports</string>
+    <string name="menu_generate_report">Generate Report</string>
+    <string name="menu_search">Search Records</string>
+    <string name="menu_logout">Logout</string>
+    <string name="action_seed_data">Load Sample Data</string>
+
+    <!-- Patient Management -->
+    <string name="title_patient_list">Patient Records</string>
+    <string name="title_add_patient">Add New Patient</string>
+    <string name="title_edit_patient">Edit Patient Details</string>
+    <string name="title_patient_details">Patient Details</string>
+    <string name="hint_patient_name">Full Name *</string>
+    <string name="hint_patient_age">Age *</string>
+    <string name="hint_patient_gender">Gender *</string>
+    <string name="hint_patient_phone">Phone Number (10 digits) *</string>
+    <string name="hint_patient_email">Email Address</string>
+    <string name="hint_patient_address">Address / City</string>
+    <string name="hint_patient_blood_group">Blood Group *</string>
+    <string name="btn_save_patient">Save Patient</string>
+    <string name="btn_update_patient">Update Patient</string>
+    <string name="btn_clear">Clear</string>
+    <string name="msg_patient_saved">Patient record saved successfully!</string>
+    <string name="msg_patient_updated">Patient record updated successfully!</string>
+    <string name="msg_patient_deleted">Patient record deleted successfully.</string>
+    <string name="empty_patients">No patients found. Tap + to register a patient.</string>
+
+    <!-- Medical Tests -->
+    <string name="title_test_list">Medical Tests</string>
+    <string name="title_add_test">Add Medical Test</string>
+    <string name="title_edit_test">Edit Medical Test</string>
+    <string name="title_test_details">Test Details</string>
+    <string name="hint_test_name">Test Name *</string>
+    <string name="hint_test_category">Category *</string>
+    <string name="hint_test_price">Price (₹) *</string>
+    <string name="hint_test_normal_range">Normal Reference Range *</string>
+    <string name="hint_test_description">Description / Notes</string>
+    <string name="btn_save_test">Save Test</string>
+    <string name="btn_update_test">Update Test</string>
+    <string name="msg_test_saved">Medical test added successfully!</string>
+    <string name="msg_test_updated">Medical test updated successfully!</string>
+    <string name="msg_test_deleted">Medical test deleted successfully.</string>
+    <string name="empty_tests">No medical tests available. Tap + to add a test.</string>
+
+    <!-- Lab Reports -->
+    <string name="title_report_list">Laboratory Reports</string>
+    <string name="title_generate_report">Generate Lab Report</string>
+    <string name="title_edit_report">Edit Lab Report</string>
+    <string name="title_report_details">Lab Report Summary</string>
+    <string name="hint_select_patient">Select Patient *</string>
+    <string name="hint_select_test">Select Medical Test *</string>
+    <string name="hint_test_date">Test Date (YYYY-MM-DD) *</string>
+    <string name="hint_report_date">Test Date (YYYY-MM-DD) *</string>
+    <string name="hint_result">Test Result / Findings *</string>
+    <string name="hint_report_result">Test Result / Findings *</string>
+    <string name="hint_remarks">Doctor / Lab Remarks</string>
+    <string name="hint_report_remarks">Doctor / Lab Remarks</string>
+    <string name="btn_generate_report">Generate Report</string>
+    <string name="btn_save_report">Save Report</string>
+    <string name="btn_update_report">Update Report</string>
+    <string name="btn_generate_pdf">Export / View PDF</string>
+    <string name="msg_report_saved">Laboratory report generated successfully!</string>
+    <string name="msg_report_updated">Laboratory report updated successfully!</string>
+    <string name="msg_report_deleted">Laboratory report deleted successfully.</string>
+    <string name="empty_reports">No laboratory reports generated yet.</string>
+
+    <!-- Validation Errors -->
+    <string name="error_invalid_name">Please enter patient name</string>
+    <string name="error_invalid_age">Please enter a valid age (1-130)</string>
+    <string name="error_invalid_phone">Please enter 10-digit phone number</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_invalid_test_name">Please enter medical test name</string>
+    <string name="error_invalid_price">Please enter a valid test price</string>
+    <string name="error_select_patient">Please select a registered patient</string>
+    <string name="error_select_test">Please select a medical test</string>
+    <string name="error_empty_date">Please select report date</string>
+    <string name="error_empty_result">Please enter test findings/results</string>
+
+    <!-- Common Dialogs & Actions -->
+    <string name="dialog_confirm_delete">Confirm Delete</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_ok">OK</string>
+    <string name="search_hint">Search records…</string>
+    <string name="back">Back</string>
+
+    <!-- Patient Side Strings -->
+    <string name="nav_home">Home</string>
+    <string name="nav_tests">Tests</string>
+    <string name="nav_appointments">Appointments</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_profile">Profile</string>
+    <string name="book_test">Book Test</string>
+    <string name="my_reports">My Reports</string>
+    <string name="my_appointments">Appointments</string>
+    <string name="my_payments">Payments</string>
+    <string name="notifications">Notifications</string>
+    <string name="feedback">Feedback</string>
+</resources>
